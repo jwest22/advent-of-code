@@ -61,7 +61,6 @@ def lookup_combined_integers(calculated_ids, combined_integer_ids):
 file_path = '3_input.txt'
 
 df_pivoted_chars = pivot_file_contents_by_character(file_path)
-df_pivoted_chars.to_csv('out.csv')
 non_integer_ids = get_ids_of_non_integer_characters(df_pivoted_chars)
 calculated_ids = apply_calculations_to_ids(non_integer_ids)
 combined_integer_ids = get_combined_integer_ids(df_pivoted_chars)

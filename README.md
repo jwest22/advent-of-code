@@ -9,3 +9,12 @@
 3. **apply_calculations_to_ids(ids)**: Applies a set of calculations to the given list of IDs and returns the calculated values.
 4. **get_combined_integer_ids(df)**: Extracts combined integer values from the DataFrame and groups their corresponding IDs.
 5. **lookup_combined_integers(calculated_ids, combined_integer_ids)**: Looks up the combined integer values based on calculated IDs and returns these integers.
+
+## Day 3 Part 2
+**Note:** Oh well, grid traversal it is. 
+
+- Reads a grid of characters from a specified file, `3_input.txt`.
+- Searches for occurrences of a specified target character (e.g., `*`).
+- For each occurrence of the target character, the function identifies all numbers (one or more digits) adjacent to it in all eight directions.
+- If a target character is adjacent to two or more numbers, the function calculates the product of these numbers.
+- Summarizes the products of all such sets of numbers and prints the total sum.
