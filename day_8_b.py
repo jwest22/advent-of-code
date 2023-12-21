@@ -43,8 +43,7 @@ def calculate_lcm_of_paths(graph, start_nodes, instructions):
     cycle_lengths = [len(find_paths_with_instructions(graph, node, instructions)) - 1 for node in start_nodes]
     return lcm_of_list(cycle_lengths)
 
-# Example usage
-file_path = '8_input.txt'  # Replace with the actual file path
+file_path = '8_input.txt'
 graph, instructions = parse_graph_from_file(file_path)
 start_nodes = find_start_nodes(graph)
 print(start_nodes)
